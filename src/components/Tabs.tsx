@@ -60,7 +60,7 @@ const Tabs = ({ tabs, defaultTab, className = "" }: TabsProps) => {
         </div>
         <div className="flex gap-x-2 items-center px-4">
           <a
-            href="https://github.com/madebymanish"
+            href="https://github.com/manish-basargekar/sassy-footers"
             target="_blank"
             rel="noopener noreferrer"
             className="text-black hover:text-gray-700 hover:bg-gray-50 px-4 py-2"
