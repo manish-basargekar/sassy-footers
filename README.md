@@ -1,8 +1,14 @@
 # Sassy Footers ✨
 
-A collection of beautiful, interactive footer components with scroll-based animations built with React, TypeScript, and Tailwind CSS. Perfect for adding eye-catching footer effects to your modern web applications.
+A collection of beautiful, interactive footer components with scroll-based animations built with React, TypeScript, and Tailwind CSS. 
 
 ## Demo
+
+
+https://github.com/user-attachments/assets/4f28d13e-b8d7-43a3-8677-efc541544166
+
+
+
 ![image](https://github.com/user-attachments/assets/5c1e3da4-69df-46ad-a74d-db17670721ed)
 ![image](https://github.com/user-attachments/assets/d18b2bdf-b260-4188-a8a5-43983860ff8b)
 
@@ -12,9 +18,6 @@ A collection of beautiful, interactive footer components with scroll-based anima
 - **Multiple Footer Designs**: 4 unique footer components with different visual styles and animations
 - **Scroll-Based Animations**: Dynamic effects that respond to user scroll position
 - **Tab Navigation**: Easy switching between different footer examples
-- **Responsive Design**: Optimized for various screen sizes
-- **Modern Tech Stack**: Built with React 19, TypeScript, and Tailwind CSS
-- **Smooth Performance**: Optimized animations using CSS transforms
 
 ## 🎨 Footer Variants
 
