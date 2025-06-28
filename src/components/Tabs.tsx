@@ -32,6 +32,7 @@ const Tabs = ({ tabs, defaultTab, className = "" }: TabsProps) => {
 
   const handleTabClick = (tabId: string) => {
     setActiveTab(tabId);
+    window.scrollTo(0, 0);
 
     const url = new URL(window.location.href);
     url.searchParams.set("tab", tabId);
