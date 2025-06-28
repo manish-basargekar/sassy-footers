@@ -1,70 +1,111 @@
-# React + TypeScript + Vite
+# Sassy Footers 🦶✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of beautiful, interactive footer components with scroll-based animations built with React, TypeScript, and Tailwind CSS. Perfect for adding eye-catching footer effects to your modern web applications.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Multiple Footer Designs**: 4 unique footer components with different visual styles and animations
+- **Scroll-Based Animations**: Dynamic effects that respond to user scroll position
+- **Tab Navigation**: Easy switching between different footer examples
+- **Responsive Design**: Optimized for various screen sizes
+- **Modern Tech Stack**: Built with React 19, TypeScript, and Tailwind CSS
+- **Smooth Performance**: Optimized animations using CSS transforms
 
-## Expanding the ESLint configuration
+## 🎨 Footer Variants
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Dia Scroll Effect
+A gradient-based footer with smooth scaling animation that responds to scroll position.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 2. Scroll Effect Two  
+An SVG-based footer with colorful gradient bars that scale vertically based on scroll.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 3. Scroll Effect Three
+Another unique scroll-responsive footer design with custom animations.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 4. Scroll Effect Four
+A fourth variation with its own distinctive scroll-based animation style.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/manish-basargekar/sassy-footers.git
+cd sassy-footers
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Install dependencies:
+```bash
+npm install
 ```
-# sassy-footers
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## 🛠️ Available Scripts
+
+- `npm run dev` - Start the development server
+- `npm run build` - Build the project for production
+- `npm run preview` - Preview the production build
+- `npm run lint` - Run ESLint for code quality checks
+
+## 🏗️ Project Structure
+
+```
+src/
+├── components/
+│   ├── dia/
+│   │   ├── dia-footer-gradient.tsx    # Gradient footer component
+│   │   └── dia-scroll-effect.tsx      # Dia scroll effect wrapper
+│   ├── scroll-effect-two.tsx          # SVG-based footer
+│   ├── scroll-effect-three.tsx        # Third footer variant
+│   ├── scroll-effect-four.tsx         # Fourth footer variant
+│   └── Tabs.tsx                       # Tab navigation component
+├── App.tsx                            # Main application component
+└── main.tsx                           # Application entry point
+```
+
+## 🎯 How It Works
+
+The footers use the `@smakss/react-scroll-direction` library to detect scroll position and apply dynamic transformations:
+
+- **Scale Effects**: Components scale based on scroll position using `scaleY()` transforms
+- **Translation Effects**: Navigation elements move vertically with different scroll ratios
+- **Responsive Scaling**: Animations adapt to different screen sizes
+
+## 🎨 Customization
+
+Each footer component accepts a `top` prop representing the current scroll position. You can:
+
+1. **Modify Animation Speed**: Adjust the divisors in transform calculations (e.g., `top / 6`, `top / 3.5`)
+2. **Change Colors**: Update the gradient colors in the SVG definitions or Tailwind classes
+3. **Add New Effects**: Create additional footer variants following the existing patterns
+4. **Customize Navigation**: Modify the links and styling in the `Tabs` component
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+- Add new footer designs
+- Improve existing animations
+- Enhance responsive behavior
+- Fix bugs or optimize performance
+
+## 👨‍💻 Author
+
+**Manish Basargekar**
+- Twitter: [@madebymanish](https://x.com/madebymanish)
+- GitHub: [manish-basargekar](https://github.com/manish-basargekar)
+
+
+**Star ⭐ this repository if you found it helpful!**
